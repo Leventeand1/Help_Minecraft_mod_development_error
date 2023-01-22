@@ -1,6 +1,7 @@
 package net.leventeand1.modtest;
 
 import net.fabricmc.api.ModInitializer;
+import net.leventeand1.modtest.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,7 +13,7 @@ public class ModTest implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
+		ModItems.registerModItems();
 
-		LOGGER.info("Hello Fabric world!");
 	}
 }
