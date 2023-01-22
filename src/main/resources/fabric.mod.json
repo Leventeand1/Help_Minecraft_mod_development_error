@@ -1,29 +1,29 @@
 {
   "schemaVersion": 1,
-  "id": "modtest",
+  "id": "modid",
   "version": "${version}",
 
-  "name": "Mod Test",
-  "description": "This is a test mod!",
+  "name": "Example Mod",
+  "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
-    "Leventeand1"
+    "Me!"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
 
-  "license": "MIT",
+  "license": "CC0-1.0",
   "icon": "assets/modid/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.leventeand1.modtest.ModTest"
+      "net.fabricmc.example.ExampleMod"
     ]
   },
   "mixins": [
-    "modtest.mixins.json"
+    "modid.mixins.json"
   ],
 
   "depends": {
