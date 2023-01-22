@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "modtest",
+  "version": "${version}",
+
+  "name": "Mod Test",
+  "description": "This is a test mod!",
+  "authors": [
+    "Leventeand1"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.leventeand1.modtest.ModTest"
+    ]
+  },
+  "mixins": [
+    "modtest.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric-api": "*",
+    "minecraft": "~1.19.3",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
